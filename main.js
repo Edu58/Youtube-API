@@ -15,6 +15,14 @@ const params = new URLSearchParams({
   regionCode: "KE",
 });
 
+const getViewsParams = new URLSearchParams({
+  key: API_KEY,
+  part: "statistics",
+  chart: "mostPopular",
+  maxResults: 20,
+  regionCode: "KE",
+});
+
 fetch(BASE_URL + params)
   .then((response) => response.json())
   .then((data) => {
