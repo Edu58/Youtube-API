@@ -27,7 +27,13 @@ fetch(BASE_URL + params)
   .then((response) => response.json())
   .then((data) => {
     NUM_1_TITLE.innerText = data.items[0].snippet.title;
-    bannerBG.src = data.items[0].snippet.thumbnails.maxres.url;
+
+    if (data.items[0].snippet.thumbnails.maxres) {
+      bannerBG.src = data.items[0].snippet.thumbnails.maxres.url;
+    } else {
+      bannerBG.src = data.items[0].snippet.thumbnails.high.url;
+    }
+      
 
     PLAY.addEventListener("click", () => {
       console.log(data.items[0].id);

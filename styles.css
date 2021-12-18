@@ -33,6 +33,11 @@ body {
   padding: 0 2rem;
 }
 
+.home .showcase .banner {
+  width: 60%;
+  margin-right: 3rem;
+}
+
 #banner-bg {
   display: flex;
   justify-content: space-between;
