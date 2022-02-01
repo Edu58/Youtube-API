@@ -7,7 +7,7 @@ Top 20 YouTube videos in Kenya. Data requested from YouTube API
 ![screenshot](screenshots.png)
 
 ### Summary
-This website utilizes the Youtube API. The UI is made in HTML5 and CSS3. Javascript is used to request the data and interpolate it into the html template. To specifi, fecth is used to request the data which is later filtered and converted into the desirable format.
+This website utilizes the Youtube API. It shows the top 20 best perfoming youtube videos in Kenya at the users time of viewing. The UI is made in HTML5 and CSS3. Javascript is used to request the data and interpolate it into the html template. To specifi, fecth is used to request the data which is later filtered and converted into the desirable format.
 
 ### License
 Copyright 2021 Edwin Karimi
